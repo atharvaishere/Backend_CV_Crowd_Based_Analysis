@@ -1,0 +1,8 @@
+yolov8x.pt
+models/fairmot_dla34.pth
+.venv/
+myenv/
+output/
+
+dockerfile
+dockerfile.old
