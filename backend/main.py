@@ -135,6 +135,10 @@ async def analyze_behavior(
         })
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/")
+def home():
+    return {"message": "Crowd Analyzer Backend"}
+
 @app.post("/analyze-and-return-video")
 async def analyze_and_return_video(
     video: UploadFile = File(...),
